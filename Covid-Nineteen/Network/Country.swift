@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct Country: Codable {
+struct Country: Codable, Identifiable {
     
+    var id = UUID()
     var info: CountryInfo?
     
     private enum CodingKeys: String, CodingKey {
