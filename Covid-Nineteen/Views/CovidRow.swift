@@ -12,7 +12,7 @@ private enum Constant {
     
     static let confirmedIcon = "🦠"
     static let deathIcon = "⚰️"
-    static let recoverIcon = "💉"
+    static let recoveredIcon = "💉"
 }
 
 struct CovidRow: View {
@@ -33,21 +33,21 @@ struct CovidRow: View {
             HStack {
                 VStack(alignment: .center, spacing: 4.0) {
                     Text(Constant.confirmedIcon)
-                    Text("19580")
+                    Text("\(confirmedCount)")
                 }
                 
                 Spacer()
                 
                 VStack(alignment: .center, spacing: 4.0) {
                     Text(Constant.deathIcon)
-                    Text("2101")
+                    Text("\(deathCount)")
                 }
                 
                 Spacer()
                 
                 VStack(alignment: .center, spacing: 4.0) {
-                    Text(Constant.recoverIcon)
-                    Text("250")
+                    Text(Constant.recoveredIcon)
+                    Text("\(deathCount)")
                 }
                 
             }
@@ -62,6 +62,18 @@ private extension CovidRow {
     
     var countryInfo: CountryInfo? {
         country.info
+    }
+    
+    var confirmedCount: Int {
+        countryInfo?.confirmed ?? 0
+    }
+    
+    var deathCount: Int {
+        countryInfo?.deaths ?? 0
+    }
+    
+    var recoveredCount: Int {
+        countryInfo?.recovered ?? 0
     }
 }
 
