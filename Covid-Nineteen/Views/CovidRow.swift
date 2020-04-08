@@ -10,9 +10,9 @@ import SwiftUI
 
 private enum Constant {
     
-    static let confirmedIcon = "🦠"
-    static let deathIcon = "⚰️"
-    static let recoveredIcon = "💉"
+    static let confirmedIcon = "🦠 Confirmed"
+    static let deathIcon = "⚰️ Deaths"
+    static let recoveredIcon = "💉 Recovered"
 }
 
 struct CovidRow: View {
@@ -24,7 +24,7 @@ struct CovidRow: View {
             HStack {
                 Spacer()
                 
-                Text("\(country.info?.countryRegion ?? "Not found")")
+                Text("\(countryRegion) \(provinceState)")
                 .bold()
                 
                 Spacer()
@@ -52,7 +52,7 @@ struct CovidRow: View {
                 
             }
         }
-        .padding(EdgeInsets(top: 8.0, leading: 16.0, bottom: 8.0, trailing: 16.0))
+        .padding(EdgeInsets(top: 8.0, leading: 4.0, bottom: 8.0, trailing: 4.0))
     }
 }
 
@@ -74,6 +74,20 @@ private extension CovidRow {
     
     var recoveredCount: Int {
         countryInfo?.recovered ?? 0
+    }
+    
+    var countryRegion: String {
+        if let countryRegion = countryInfo?.countryRegion {
+            return "\(countryRegion)"
+        }
+        return ""
+    }
+    
+    var provinceState: String {
+        if let provinceState = countryInfo?.provinceState {
+            return countryRegion.isEmpty ? "\(provinceState)" : "- \(provinceState)"
+        }
+        return ""
     }
 }
 
