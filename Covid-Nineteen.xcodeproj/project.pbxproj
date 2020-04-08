@@ -13,6 +13,7 @@
 		00C2019A243DF136004931F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C20199243DF136004931F6 /* Assets.xcassets */; };
 		00C2019D243DF136004931F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C2019C243DF136004931F6 /* Preview Assets.xcassets */; };
 		00C201A0243DF136004931F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C2019E243DF136004931F6 /* LaunchScreen.storyboard */; };
+		00C201AA243DF48A004931F6 /* CovidRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C201A9243DF48A004931F6 /* CovidRow.swift */; };
 		00C201AC243DF4D3004931F6 /* CoronaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C201AB243DF4D3004931F6 /* CoronaResponse.swift */; };
 		00C201AF243DF4FE004931F6 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C201AE243DF4FE004931F6 /* Country.swift */; };
 		00C201B1243DF510004931F6 /* CountryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C201B0243DF510004931F6 /* CountryInfo.swift */; };
@@ -27,6 +28,7 @@
 		00C2019C243DF136004931F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		00C2019F243DF136004931F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00C201A1243DF136004931F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C201A9243DF48A004931F6 /* CovidRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidRow.swift; sourceTree = "<group>"; };
 		00C201AB243DF4D3004931F6 /* CoronaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaResponse.swift; sourceTree = "<group>"; };
 		00C201AE243DF4FE004931F6 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		00C201B0243DF510004931F6 /* CountryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfo.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				00C201A1243DF136004931F6 /* Info.plist */,
 				00C20193243DF134004931F6 /* AppDelegate.swift */,
 				00C20197243DF134004931F6 /* ContentView.swift */,
+				00C201A9243DF48A004931F6 /* CovidRow.swift */,
 				00C20195243DF134004931F6 /* SceneDelegate.swift */,
 				00C20199243DF136004931F6 /* Assets.xcassets */,
 				00C2019E243DF136004931F6 /* LaunchScreen.storyboard */,
@@ -167,6 +170,7 @@
 				00C201AC243DF4D3004931F6 /* CoronaResponse.swift in Sources */,
 				00C20194243DF134004931F6 /* AppDelegate.swift in Sources */,
 				00C20196243DF134004931F6 /* SceneDelegate.swift in Sources */,
+				00C201AA243DF48A004931F6 /* CovidRow.swift in Sources */,
 				00C201AF243DF4FE004931F6 /* Country.swift in Sources */,
 				00C20198243DF134004931F6 /* ContentView.swift in Sources */,
 			);
