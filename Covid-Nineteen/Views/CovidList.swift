@@ -30,8 +30,11 @@ let countries: [Country] = [Country(info: CountryInfo(id: 200,
 struct CovidList: View {
     
     var body: some View {
-        List(countries, id: \.id) { country in
-            CovidRow(country: country)
+        NavigationView {
+            List(countries, id: \.id) { country in
+                CovidRow(country: country)
+            }
+            .navigationBarTitle(Text("Covid Nineteen"))
         }
     }
 }
