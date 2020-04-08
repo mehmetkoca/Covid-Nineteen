@@ -47,7 +47,7 @@ struct CovidRow: View {
                 
                 VStack(alignment: .center, spacing: 4.0) {
                     Text(Constant.recoveredIcon)
-                    Text("\(deathCount)")
+                    Text("\(recoveredCount)")
                 }
                 
             }
