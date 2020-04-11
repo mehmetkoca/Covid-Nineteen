@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		003FBF9F243E65010071A414 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FBF9E243E65010071A414 /* Global.swift */; };
 		0074CF372440AD1B00AC920E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0074CF362440AD1B00AC920E /* MapView.swift */; };
+		0074CF392440B86700AC920E /* CovidDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0074CF382440B86700AC920E /* CovidDetail.swift */; };
 		00C20194243DF134004931F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C20193243DF134004931F6 /* AppDelegate.swift */; };
 		00C20196243DF134004931F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C20195243DF134004931F6 /* SceneDelegate.swift */; };
 		00C2019A243DF136004931F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C20199243DF136004931F6 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		003FBF9E243E65010071A414 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		0074CF362440AD1B00AC920E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		0074CF382440B86700AC920E /* CovidDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDetail.swift; sourceTree = "<group>"; };
 		00C20190243DF134004931F6 /* Covid-Nineteen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid-Nineteen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C20193243DF134004931F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00C20195243DF134004931F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				00C201B2243E3CF8004931F6 /* CovidList.swift */,
 				00C201A9243DF48A004931F6 /* CovidRow.swift */,
 				0074CF362440AD1B00AC920E /* MapView.swift */,
+				0074CF382440B86700AC920E /* CovidDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0074CF392440B86700AC920E /* CovidDetail.swift in Sources */,
 				00C201B1243DF510004931F6 /* CountryInfo.swift in Sources */,
 				00C201AC243DF4D3004931F6 /* CoronaResponse.swift in Sources */,
 				00C20194243DF134004931F6 /* AppDelegate.swift in Sources */,

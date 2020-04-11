@@ -15,7 +15,9 @@ struct CovidList: View {
     var body: some View {
         NavigationView {
             List(countries, id: \.id) { country in
-                CovidRow(country: country)
+                NavigationLink(destination: CovidDetail(country: country)) {
+                    CovidRow(country: country)
+                }
             }
             .onAppear(perform: loadData)
             .navigationBarTitle(Text("Covid Nineteen"))

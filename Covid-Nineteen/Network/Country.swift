@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import MapKit
 import SwiftUI
 
 struct Country: Codable, Identifiable {
@@ -17,5 +18,15 @@ struct Country: Codable, Identifiable {
     private enum CodingKeys: String, CodingKey {
         
         case info = "attributes"
+    }
+}
+
+// MARK: - Computed Properties
+
+extension Country {
+
+    var coordinate: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(latitude: Double(info?.lat ?? 0.0),
+                               longitude: Double(info?.long ?? 0.0))
     }
 }
